@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VimCode — Vim+VSCode Hybrid Editor Built in Rust</title>
+  <meta name="description" content="High-performance Vim+VSCode hybrid code editor built in Rust. Modal editing meets modern UX with GTK4 GUI and terminal backends, tree-sitter highlighting, LSP, and Lua plugins.">
+  <meta name="keywords" content="vim, vscode, code editor, rust, gtk4, tree-sitter, lsp, modal editing, terminal, tui, neovim alternative">
+  <meta name="author" content="JDonaghy">
+  <link rel="canonical" href="https://jdonaghy.github.io/vimcode-website/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="VimCode — Vim+VSCode Hybrid Editor Built in Rust">
+  <meta property="og:description" content="Modal editing meets modern UX. GTK4 GUI + terminal, tree-sitter, LSP, DAP, Lua plugins. Fast, lightweight, no GPU required.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jdonaghy.github.io/vimcode-website/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VimCode — Vim+VSCode Hybrid Editor">
+  <meta name="twitter:description" content="Vim+VSCode hybrid in Rust. GTK4 + TUI, tree-sitter, LSP, Lua plugins.">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "VimCode",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Linux, macOS",
+    "description": "High-performance Vim+VSCode hybrid code editor built in Rust with GTK4 and terminal backends.",
+    "url": "https://jdonaghy.github.io/vimcode-website/",
+    "downloadUrl": "https://github.com/JDonaghy/vimcode/releases/latest",
+    "softwareVersion": "0.7.0",
+    "programmingLanguage": "Rust",
+    "license": "https://opensource.org/licenses/MIT",
+    "codeRepository": "https://github.com/JDonaghy/vimcode",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ── Navigation ──────────────────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="container">
+      <a href="#" class="nav-brand">
+        <img src="favicon.svg" alt="VimCode logo" width="28" height="28">
+        VimCode
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features" class="nav-hide-mobile">Features</a></li>
+        <li><a href="#install">Install</a></li>
+        <li><a href="https://github.com/JDonaghy/vimcode/wiki" target="_blank" rel="noopener">Docs</a></li>
+        <li><a href="https://github.com/JDonaghy/vimcode" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://github.com/JDonaghy/vimcode/releases/latest" class="btn btn-primary">Download</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── Hero ────────────────────────────────────────────────────── -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <h1><span class="accent">Vim</span> meets <span class="green">VSCode</span>.<br>Built in Rust.</h1>
+        <p class="subtitle">
+          A code editor that feels like Vim when you want it and VSCode when you need it.
+          GTK4 desktop app or terminal&mdash;your choice. Switch with <code class="mono">--tui</code>.
+        </p>
+        <div class="hero-buttons">
+          <a href="https://github.com/JDonaghy/vimcode/releases/latest" class="btn btn-green">Download</a>
+          <a href="https://github.com/JDonaghy/vimcode" class="btn btn-outline" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+        <div class="badges">
+          <span class="badge"><strong>5,199</strong>&nbsp;tests</span>
+          <span class="badge"><strong>20</strong>&nbsp;languages</span>
+          <span class="badge"><strong>6</strong>&nbsp;built-in themes</span>
+          <span class="badge"><strong>0</strong>&nbsp;GPU required</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Screenshot ──────────────────────────────────────────────── -->
+    <section class="screenshot" id="screenshot">
+      <div class="container">
+        <div class="screenshot-placeholder">
+          Screenshot coming soon
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Features ────────────────────────────────────────────────── -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2>Everything you need, built in</h2>
+        <p class="section-sub">No plugins required for the essentials. Batteries included.</p>
+        <div class="feature-grid">
+
+          <div class="feature-card">
+            <span class="icon">&#x2328;</span>
+            <h3>Modal Editing</h3>
+            <p>Full Vim keybindings: modes, operators, motions, text objects, registers, macros, marks. 99% Vim command compatibility.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="icon">&#x1F5C2;</span>
+            <h3>Modern UX</h3>
+            <p>Tabbed editor groups, breadcrumbs, command palette, menu bar, context menus, file explorer, and mouse support. Toggle VSCode edit mode with Alt-M.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="icon">&#x1F5A5;</span>
+            <h3>Dual Backend</h3>
+            <p>GTK4 graphical window for your desktop. Full-featured terminal UI for SSH and headless servers. Same codebase, same keybindings.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="icon">&#x1F50D;</span>
+            <h3>LSP Intelligence</h3>
+            <p>Completions, go-to-definition, hover docs, diagnostics, code actions, rename, semantic token highlighting. Auto-installs language servers.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="icon">&#x1F41E;</span>
+            <h3>DAP Debugger</h3>
+            <p>Breakpoints, stepping, variable inspection, call stack, watch expressions, conditional breakpoints. Six adapter types supported.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="icon">&#x1F3A8;</span>
+            <h3>Tree-sitter Highlighting</h3>
+            <p>Fast, incremental syntax highlighting for 20 languages. Accurate even during edits. No regex hacks.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="icon">&#x1F4BB;</span>
+            <h3>Integrated Terminal</h3>
+            <p>Embedded terminal panel with tabs, split panes, scrollback, find-in-output, and 256-color rendering. No context switching.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="icon">&#x1F9E9;</span>
+            <h3>Lua Plugin System</h3>
+            <p>Extend the editor with Lua 5.4 scripts. Register commands, keymaps, and event hooks. Extension registry with one-click install.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="icon">&#x1F916;</span>
+            <h3>AI Assistant</h3>
+            <p>Built-in chat panel supporting Anthropic Claude, OpenAI, and local Ollama models. Inline AI completions with ghost text.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="icon">&#xE725;</span>
+            <h3>Git Integration</h3>
+            <p>Gutter diff markers, inline diff peek, hunk staging, blame, branch switching, commit from the source control panel.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="icon">&#x1F50E;</span>
+            <h3>Fuzzy Finder</h3>
+            <p>Telescope-style unified picker for files, symbols, buffers, grep, commands, branches, and more. Ctrl-P to open.</p>
+          </div>
+
+          <div class="feature-card">
+            <span class="icon">&#x1F3A8;</span>
+            <h3>Themes</h3>
+            <p>Six built-in color schemes including OneDark, Gruvbox, and VSCode Light. Import any VSCode JSON theme file.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Install ─────────────────────────────────────────────────── -->
+    <section class="install" id="install">
+      <div class="container">
+        <h2>Get started in seconds</h2>
+
+        <div class="install-tabs">
+          <input type="radio" name="install-tab" id="tab-mac" checked>
+          <label for="tab-mac">macOS</label>
+          <input type="radio" name="install-tab" id="tab-deb">
+          <label for="tab-deb">Ubuntu / Debian</label>
+          <input type="radio" name="install-tab" id="tab-flat">
+          <label for="tab-flat">Flatpak</label>
+          <input type="radio" name="install-tab" id="tab-src">
+          <label for="tab-src">From source</label>
+
+          <div class="install-panel panel-mac">
+            <p>Install via Homebrew (Apple Silicon):</p>
+            <pre><code>brew tap JDonaghy/vimcode
+brew install vimcode</code></pre>
+            <p style="margin-top:1rem">Requires GTK4: <code class="mono">brew install gtk4</code></p>
+          </div>
+
+          <div class="install-panel panel-deb">
+            <p>Download the <code class="mono">.deb</code> from the latest release:</p>
+            <pre><code>wget https://github.com/JDonaghy/vimcode/releases/latest/download/vimcode_amd64.deb
+sudo dpkg -i vimcode_amd64.deb</code></pre>
+            <p style="margin-top:1rem">Requires GTK 4.10+ (Ubuntu 24.04+ recommended).</p>
+          </div>
+
+          <div class="install-panel panel-flat">
+            <p>Download the Flatpak bundle from the latest release:</p>
+            <pre><code>flatpak install vimcode.flatpak
+flatpak run io.github.jdonaghy.VimCode</code></pre>
+          </div>
+
+          <div class="install-panel panel-src">
+            <p>Build from source (requires Rust toolchain and GTK4 dev headers):</p>
+            <pre><code>git clone https://github.com/JDonaghy/vimcode.git
+cd vimcode
+cargo build --release
+./target/release/vimcode</code></pre>
+            <p style="margin-top:1rem">TUI-only (no GTK dependency): <code class="mono">cargo build --release --bin vcd</code></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Why VimCode ─────────────────────────────────────────────── -->
+    <section class="why" id="why">
+      <div class="container">
+        <h2>Why VimCode?</h2>
+        <div class="comparison-grid">
+
+          <div class="comparison-card">
+            <h3>vs. Vim / Neovim</h3>
+            <p>Real GUI with menus, dialogs, mouse support, and a command palette. Built-in LSP, debugger, terminal, and file explorer without configuring dozens of plugins. Same modal editing muscle memory.</p>
+          </div>
+
+          <div class="comparison-card">
+            <h3>vs. VSCode</h3>
+            <p>True modal editing as a first-class feature, not an extension fighting the host editor. Rust core instead of Electron. Starts instantly, uses a fraction of the memory. No telemetry.</p>
+          </div>
+
+          <div class="comparison-card">
+            <h3>vs. Zed</h3>
+            <p>No GPU required&mdash;works in VMs, remote desktops, and over SSH. Full terminal UI mode for headless servers. CPU-rendered via Cairo, runs anywhere X11 or Wayland is available.</p>
+          </div>
+
+          <div class="comparison-card">
+            <h3>vs. configuring everything yourself</h3>
+            <p>LSP, DAP, tree-sitter, terminal, git, fuzzy finder, AI, themes, and 5,199 tests out of the box. One binary, zero runtime dependencies beyond GTK4. Works on first launch.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="https://github.com/JDonaghy/vimcode" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://github.com/JDonaghy/vimcode/wiki" target="_blank" rel="noopener">Documentation</a></li>
+        <li><a href="https://github.com/JDonaghy/vimcode/releases" target="_blank" rel="noopener">Releases</a></li>
+        <li><a href="https://github.com/JDonaghy/vimcode/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a></li>
+      </ul>
+      <span class="footer-copy">VimCode &copy; 2025&ndash;2026</span>
+    </div>
+  </footer>
+
+</body>
+</html>

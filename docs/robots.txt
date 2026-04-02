@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jdonaghy.github.io/vimcode-website/sitemap.xml
